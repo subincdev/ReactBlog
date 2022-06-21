@@ -11,15 +11,19 @@ const StyledLink = styled(Link)`
 const StyledImg = styled(LogoImg)`
   display: block;
 `;
+
+const StyledH1 = styled.h1`
+  font-size: 3rem;
+`;
 export default function Logo() {
   return (
-    <h1>
+    <StyledH1>
       <BrowserRouter>
         <StyledLink to="/home">
           <StyledImg />
         </StyledLink>
         <Route path="/home" exact component={Index} />
       </BrowserRouter>
-    </h1>
+    </StyledH1>
   );
 }
