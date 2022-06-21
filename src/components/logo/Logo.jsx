@@ -1,15 +1,15 @@
 import { BrowserRouter, Route } from "react-router-dom";
 import Index from "../../pages/Index";
-import * as Styled from "./Logo.style";
+import * as S from "./Logo.style";
 export default function Logo() {
   return (
-    <Styled.StyledH1>
+    <S.StyledH1>
       <BrowserRouter>
-        <Styled.StyledLink to="/home">
-          <Styled.StyledImg />
-        </Styled.StyledLink>
+        <S.StyledLink to="/home">
+          <S.StyledImg />
+        </S.StyledLink>
         <Route path="/home" exact component={Index} />
       </BrowserRouter>
-    </Styled.StyledH1>
+    </S.StyledH1>
   );
 }

@@ -1,26 +1,26 @@
 import React from "react";
-import * as Styled from "./Login.style";
+import * as S from "./Login.style";
 
 export default function Login() {
   return (
-    <Styled.ContUl>
+    <S.ContUl>
       <li class="profile-img">
-        <Styled.StyledLink to="">
-          <Styled.RoundImg src="./assets/profile.jpg" alt="My Page" />
-        </Styled.StyledLink>
+        <S.StyledLink to="">
+          <S.RoundImg src="./assets/profile.jpg" alt="My Page" />
+        </S.StyledLink>
       </li>
       <li>
-        <Styled.WriteBtn to="">
-          <Styled.IconWhite />
-          <Styled.WriteBtnTxt>Write</Styled.WriteBtnTxt>
-        </Styled.WriteBtn>
+        <S.WriteBtn to="">
+          <S.IconWhite />
+          <S.WriteBtnTxt>Write</S.WriteBtnTxt>
+        </S.WriteBtn>
       </li>
       <li>
-        <Styled.LogoutBtn>
-          <Styled.StyledLogoutBtn />
-          <Styled.WriteBtnTxt>Logout</Styled.WriteBtnTxt>
-        </Styled.LogoutBtn>
+        <S.LogoutBtn>
+          <S.StyledLogoutBtn />
+          <S.WriteBtnTxt>Logout</S.WriteBtnTxt>
+        </S.LogoutBtn>
       </li>
-    </Styled.ContUl>
+    </S.ContUl>
   );
 }

@@ -1,14 +1,14 @@
 import Logo from "../logo/Logo";
 import Login from "../login/Login";
-import * as Styled from "./Header.style";
+import * as S from "./Header.style";
 
 export default function Header() {
   return (
-    <Styled.HeaderColor>
-      <Styled.WrapDiv>
+    <S.HeaderColor>
+      <S.WrapDiv>
         <Logo />
         <Login />
-      </Styled.WrapDiv>
-    </Styled.HeaderColor>
+      </S.WrapDiv>
+    </S.HeaderColor>
   );
 }
