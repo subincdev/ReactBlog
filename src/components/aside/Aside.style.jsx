@@ -10,6 +10,9 @@ export const WrapAbout = styled.aside`
   background: var(--white-color);
   text-align: center;
   font-size: 2rem;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const H2TitleAbout = styled.h2`
