@@ -2,7 +2,7 @@ import React from "react";
 import CategoryBtn from "../categoryBtn/CategoryBtn";
 import * as S from "./Post.style";
 export default function Post(props) {
-  const postItem = props.posts.map((post, idx) => (
+  const postItem = props.posts.reverse().map((post, idx) => (
     <li key={idx}>
       <S.StyledLink to="/postDetail">
         <article>
